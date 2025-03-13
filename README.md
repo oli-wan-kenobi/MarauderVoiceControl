@@ -29,22 +29,27 @@ A voice-activated script that locks your computer and unlocks it using speech co
 
 ## Running on Windows 10 with a Virtual Environment
 Using a Python virtual environment is recommended to keep dependencies isolated:
+
     1. Create the python virtual environment:
         ```bash
         python3 -m venv venv
         ```
+
     2. Activate the virtual environment:
         ```bash
         .\venv\Scripts\activate
         ```
+
     3. If the virtual environment activation fails with the following error 
         ```bash
         FullyQualifiedErrorId : UnauthorizedAccess
         ```
+
         Run the followiung command to fix it
         ```bash
         Set-ExecutionPolicy Unrestricted -Scope Process
         ```
+
     4. Install dependencies and run the script
         ```bash
         pip install -r requirements.txt
